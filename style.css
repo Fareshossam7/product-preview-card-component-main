@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap')
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+main{
+    width: 640px;
+    height: 478px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* margin-bottom: 2rem; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.dsk{
+    height: 478px;
+}
+.mob{
+    display: none;
+}
+.text{
+    background-color: var(--White);
+    padding: 30px;
+}
+.name{
+    color: var(--Dark-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom:.6rem;
+}
+h1{
+    font-family: 'fraunces', serif;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+}
+.desc{
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    width: 240px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.new{
+    color: var(--Dark-cyan);
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'fraunces', serif;
+}
+.old{
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    margin-bottom: 1.5rem;
+}
+button{
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    border-radius: .5rem;
+    padding: 15px 15px;
+    width: 240px;
+    font-weight: 700;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+button:hover{
+    cursor: pointer;
+    background-color:  hsl(158, 36%, 17%);
+}
+
+@media {
+    (max-width: 425 px)
+    body{
+        height: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        height: 100%;
+        width: 350px;
+    }
+    .dsk{
+        display: none;
+    }
+    .mob{
+        display: block;
+        width: 350px;
+    }
+    .name{
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .desc{
+        width: 295px;
+    }
+    button{
+        width: 300px;
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
